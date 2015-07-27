@@ -12,7 +12,7 @@ import Ensure from 'rethink-ensure'
 let ensure = new Ensure(r)
 
 function errorHandler (err, ctx) {
-  this.body = err
+  console.log(err)
 }
 
 let debug = Debug('meepcloud:app')
